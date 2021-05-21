@@ -1,0 +1,32 @@
+{
+  "name": "chrome-extension-demo",
+  "version": "1.0.0",
+  "description": "This is a demo extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshjaiwal/Chrome-extension-demo.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "browser",
+    "javascript"
+  ],
+  "author": "Ganesh N. Jaiwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganeshjaiwal/Chrome-extension-demo/issues"
+  },
+  "homepage": "https://github.com/ganeshjaiwal/Chrome-extension-demo#readme",
+  "devDependencies": {
+    "chrome-webstore-manager": "^0.4.0",
+    "fs-extra": "^0.30.0",
+    "jsonfile": "^2.2.3",
+    "zip-local": "^0.3.4"
+  }
+}

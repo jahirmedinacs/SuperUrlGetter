@@ -1,0 +1,52 @@
+{
+    "name":"The Paper Url Scrapper",
+    "short_name":"UrlScrapper",
+    "description":"An App to Get all the URLs on a page",
+    "version":"45",
+    "manifest_version":2,
+    "icons":{
+        "57": "images/apple-icon-57x57.png",
+        "60": "images/apple-icon-60x60.png",
+        "72": "images/apple-icon-72x72.png",
+        "76": "images/apple-icon-76x76.png",
+        "114": "images/apple-icon-114x114.png",
+        "120": "images/apple-icon-120x120.png",
+        "144": "images/apple-icon-144x144.png",
+        "152": "images/apple-icon-152x152.png",
+        "180": "images/apple-icon-180x180.png",
+        "192":  "images/android-icon-192x192.png",
+        "32": "images/favicon-32x32.png",
+        "96": "images/favicon-96x96.png",
+        "16": "images/favicon-16x16.png"},
+    "background":{
+            "scripts":["scripts/background.js"]},
+    "browser_action":{
+        "default_icon":{
+            "57": "images/apple-icon-57x57.png",
+            "60": "images/apple-icon-60x60.png",
+            "72": "images/apple-icon-72x72.png",
+            "76": "images/apple-icon-76x76.png",
+            "114": "images/apple-icon-114x114.png",
+            "120": "images/apple-icon-120x120.png",
+            "144": "images/apple-icon-144x144.png",
+            "152": "images/apple-icon-152x152.png",
+            "180": "images/apple-icon-180x180.png",
+            "192":  "images/android-icon-192x192.png",
+            "32": "images/favicon-32x32.png",
+            "96": "images/favicon-96x96.png",
+            "16": "images/favicon-16x16.png"},
+    "default_title":"UrlScrapper",
+        "default_popup":"pages/popup/popup.html"},
+    "options_page":"pages/options/options.html",
+    "options_ui":{
+        "page":"pages/options/options.html",
+        "chrome_style":true},
+    "content_scripts":[{
+        // "matches":["http://*/*","https://*/*"],
+        "matches": ["*://scholar.google.com/*"],
+        "css":["styles/contentscript.css"],
+        "js":["scripts/contentscript.js"],
+        "run_at":"document_end",
+        "all_frames":false}],
+    "permissions":["<all_urls>"]
+}
